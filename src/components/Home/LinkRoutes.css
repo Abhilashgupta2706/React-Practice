@@ -1,0 +1,67 @@
+:root {
+    --btn-background: #333;
+    --btn-color: #fff;
+    --btn-hover-color: #00fbff;
+}
+
+.wrapper {
+
+    font-family: 'Lato', sans-serif;
+    position: sticky;
+}
+
+.link_wrapper {
+    position: relative;
+}
+
+.AnchorTag {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: var(--btn-background);
+    text-align: center;
+    color: var(--btn-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid var(--btn-background);
+    transition: all .35s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: var(--btn-hover-color);
+    transition: all .35s;
+}
+
+.AnchorTag:hover {
+    transform: scale(.9);
+    /* width: 200px; */
+    border: 3px solid var(--btn-hover-color);
+    background: transparent;
+    color: var(--btn-hover-color);
+}
+
+.AnchorTag:hover+.icon {
+    transform: rotate(45deg) scale(.9);
+    border: 3px solid var(--btn-hover-color);
+    right: -15%;
+}
