@@ -17,8 +17,8 @@ function App() {
 
         <Routes>
 
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/particles-js' element={<Particles />} />
+          <Route exact path='React-Practice/' element={<Home />} />
+          <Route exact path='React-Practice/particles-js' element={<Particles />} />
 
 
         </Routes>
