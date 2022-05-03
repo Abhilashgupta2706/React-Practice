@@ -14,7 +14,7 @@ export default function Home() {
 
                 <div className='d-flex align-item-center justify-content-center flex-wrap gap-5'>
 
-                    <LinkRoute text='Particle JS' link="particles-js" />
+                    <LinkRoute text='Particle JS' link="/particles-js" />
 
                 </div>
             </div>
