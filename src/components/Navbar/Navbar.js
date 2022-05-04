@@ -8,12 +8,10 @@ export default function Navbar() {
     return (
         <>
 
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid ">
-                    <div class="navbar-brand mx-auto">
-                        <Link to='/'><img src={icon} alt="" width="25" height="25" class="d-inline-block align-text-top text-center mx-2" /></Link>
-                        React Practice
-                    </div>
+            <nav className="navbar navbar-light bg-light">
+                <div className="navbar-brand mx-auto">
+                    <Link to='/'><img src={icon} alt="" width="25" height="25" className="d-inline-block align-text-top text-center mx-2" /></Link>
+                    React Practice
                 </div>
             </nav>
 

@@ -1,5 +1,6 @@
 .App {
   min-height: 100vh;
   text-align: center;
-  background-color: #459fff;
+  background-color: #4570ff;
+  z-index: 1  ;
 }
