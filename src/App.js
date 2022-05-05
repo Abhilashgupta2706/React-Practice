@@ -7,6 +7,7 @@ import {
 import Navbar from './components/Navbar/Navbar';
 import ParticlesJS from './components/ParticlesJS/ParticlesJS';
 import Home from './components/Home/Home';
+import TextAnimation from './components/TextAnimation/TextAnimation';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route exact path='/text-animation' element={<TextAnimation />} />
       </Routes>
 
     </div>
