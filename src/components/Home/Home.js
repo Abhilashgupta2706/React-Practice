@@ -2,11 +2,6 @@ import React from 'react'
 import LinkRoute from './LinkRoute'
 
 export default function Home() {
-
-    // const btnColos = ["primary", "secondary", "success", "info", "warning", "danger",]
-
-
-
     return (
         <>
             <div className='container-fluid py-5 '>
@@ -16,6 +11,7 @@ export default function Home() {
 
                     <LinkRoute text='Particle JS' link="/particles-js" />
                     <LinkRoute text='Text Animation' link="/text-animation" />
+                    <LinkRoute text='Interactive 3D BG' link="/interactive-3d-background" />
 
                 </div>
             </div>

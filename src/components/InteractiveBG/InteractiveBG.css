@@ -1,0 +1,17 @@
+#background {
+    object-fit: cover;
+    z-index: 0;
+    width: 100%;
+    height: 92vh;
+}
+
+#content {
+    z-index: 5;
+}
+
+
+@media screen and (min-height:765px) {
+    #background {
+        height: 93vh;
+    }
+}

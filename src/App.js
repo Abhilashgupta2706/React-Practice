@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import ParticlesJS from './components/ParticlesJS/ParticlesJS';
 import Home from './components/Home/Home';
 import TextAnimation from './components/TextAnimation/TextAnimation';
+import InteractiveBG from './components/InteractiveBG/InteractiveBG';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
 
       <Navbar />
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route index path='/' element={<Home />} />
         <Route exact path='/text-animation' element={<TextAnimation />} />
+        <Route exact path='/interactive-3d-background' element={<InteractiveBG />} />
       </Routes>
 
     </div>
