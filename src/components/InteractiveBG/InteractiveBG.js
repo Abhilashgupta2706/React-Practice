@@ -24,6 +24,8 @@ export default function InteractiveBG() {
         }
     }, [vantaEffect])
 
+
+
     return (
         <>
             <div id='background' ref={myRef}>
