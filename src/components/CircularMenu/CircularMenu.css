@@ -1,0 +1,18 @@
+.circular_menu .circular_menu-toggle_close:hover, .circular_menu .circular_menu-toggle_close:focus, .circular_menu .circular_menu-toggle_close:active {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.circular_menu .circular_menu-toggle_open:hover, .circular_menu .circular_menu-toggle_open:active {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: black;
+}
+
+.circular_menu .circular_menu-toggle_open:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: white;
+}
+
+.circular_menu .circular_menu-toggle_open:focus .cNtjMO {
+  background: black;
+}
+/*# sourceMappingURL=CircularMenu.css.map */

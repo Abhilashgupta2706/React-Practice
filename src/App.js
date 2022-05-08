@@ -9,6 +9,7 @@ import ParticlesJS from './components/ParticlesJS/ParticlesJS';
 import Home from './components/Home/Home';
 import TextAnimation from './components/TextAnimation/TextAnimation';
 import InteractiveBG from './components/InteractiveBG/InteractiveBG';
+import CircularMenu from './components/CircularMenu/CircularMenu';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route index path='/' element={<Home />} />
         <Route exact path='/text-animation' element={<TextAnimation />} />
         <Route exact path='/interactive-3d-background' element={<InteractiveBG />} />
+        <Route exact path='/circular-menu' element={<CircularMenu />} />
+        <Route element={<Home />} />
       </Routes>
 
     </div>

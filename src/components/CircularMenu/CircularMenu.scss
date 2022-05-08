@@ -1,0 +1,23 @@
+.circular_menu {
+    .circular_menu-toggle_close {
+        &:hover,
+        &:focus,
+        &:active {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+    .circular_menu-toggle_open {
+        &:hover,
+        &:active {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: black;
+        }
+        &:focus {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: white;
+            .cNtjMO {
+                background: black;
+            }
+        }
+    }
+}
