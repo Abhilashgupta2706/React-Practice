@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { CircleMenu, CircleMenuItem, TooltipPlacement } from "react-circular-menu";
+import { CircleMenu, CircleMenuItem} from "react-circular-menu";
 
 import "./CircularMenu.css"
 

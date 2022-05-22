@@ -47,6 +47,7 @@ export default function Home() {
                         <LinkRoute text='Text Animation' link="/text-animation" />
                         <LinkRoute text='Interactive 3D BG' link="/interactive-3d-background" />
                         <LinkRoute text='Circular Menu' link="/circular-menu" />
+                        <LinkRoute text='Contact Form' link="/contact-form" />
 
                     </div>
                 </div>

@@ -10,6 +10,7 @@ import Home from './components/Home/Home';
 import TextAnimation from './components/TextAnimation/TextAnimation';
 import InteractiveBG from './components/InteractiveBG/InteractiveBG';
 import CircularMenu from './components/CircularMenu/CircularMenu';
+import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/text-animation' element={<TextAnimation />} />
         <Route exact path='/interactive-3d-background' element={<InteractiveBG />} />
         <Route exact path='/circular-menu' element={<CircularMenu />} />
+        <Route exact path='/contact-form' element={<ContactForm />} />
         <Route element={<Home />} />
       </Routes>
 
