@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
 import database from './FirebaseDB'
 import "./ContactForm.css"
 
@@ -29,13 +30,30 @@ export default function ContactForm() {
         setFormSumitted(true)
 
         const { name, email, contact, message } = contactFormData
+        const currentDateAndTime = Date().toLocaleString()
+
+        const templateParams = {
+            Name: name,
+            Message: message,
+            Email: email,
+            Contact: contact,
+            DateAndTime: currentDateAndTime
+        }
+
+        // Email JS My config keys
+        emailjs.send('service_1yvmjau', 'template_fy9uibr', templateParams, 'C-AcLswKLfmCij2NU')
+            .then((result) => {
+                return
+            }, (error) => {
+                alert(error.text);
+            });
 
         database.ref("all-react-practice-form").push({
             Name: name,
             Email_ID: email,
             Contact_No: contact,
             Message: message,
-            Time_And_Date: Date().toLocaleString()
+            Time_And_Date: currentDateAndTime
         })
             .then(() => {
                 alert("DOne");
