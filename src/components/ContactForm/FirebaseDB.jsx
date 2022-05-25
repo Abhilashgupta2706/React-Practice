@@ -1,14 +1,21 @@
 import app from 'firebase/app';
 import 'firebase/database';
 
+const { REACT_APP_API_KEY,
+    REACT_APP_AUTH_DOMAIN,
+    REACT_APP_STORAGE_BUCKET,
+    REACT_APP_MESSAGING_SENDER_ID,
+    REACT_APP_APP_IS,
+    REACT_APP_MEASUREMENT_ID } = process.env;
+
 const firebaseConfig = {
-    apiKey: "AIzaSyAhgVfT17xGre3IhucR_qO6hiLFxcovLQE",
-    authDomain: "all-react-practice.firebaseapp.com",
+    apiKey: REACT_APP_API_KEY,
+    authDomain: REACT_APP_AUTH_DOMAIN,
     projectId: "all-react-practice",
-    storageBucket: "all-react-practice.appspot.com",
-    messagingSenderId: "419330545362",
-    appId: "1:419330545362:web:c15841cb1898c45e0b7f0b",
-    measurementId: "G-P09TSK13Y8"
+    storageBucket: REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: REACT_APP_MESSAGING_SENDER_ID,
+    appId: REACT_APP_APP_IS,
+    measurementId: REACT_APP_MEASUREMENT_ID
 };
 
 app.initializeApp(firebaseConfig);
